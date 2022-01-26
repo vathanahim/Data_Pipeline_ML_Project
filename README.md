@@ -33,6 +33,8 @@ the data in the best performing machine learning model.
     - Pandas
     - Numpy
 - SQL within MariaDB
+- Astra DB
+- Apache Cassandra
 - Data Pipeline
     - Airflow 2.0
 - Devops 
