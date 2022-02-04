@@ -1,0 +1,59 @@
+[2022-02-04 02:19:06,204] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.query_from_astra_db manual__2022-02-04T02:19:00.083359+00:00 [queued]>
+[2022-02-04 02:19:06,227] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.query_from_astra_db manual__2022-02-04T02:19:00.083359+00:00 [queued]>
+[2022-02-04 02:19:06,228] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-04 02:19:06,230] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-02-04 02:19:06,233] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-04 02:19:06,259] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): query_from_astra_db> on 2022-02-04 02:19:00.083359+00:00
+[2022-02-04 02:19:06,269] {standard_task_runner.py:52} INFO - Started process 581 to run task
+[2022-02-04 02:19:06,279] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Sample_one', 'query_from_astra_db', 'manual__2022-02-04T02:19:00.083359+00:00', '--job-id', '134', '--raw', '--subdir', 'DAGS_FOLDER/astradb.py', '--cfg-path', '/tmp/tmpnqc0o8cu', '--error-file', '/tmp/tmpohldoxgn']
+[2022-02-04 02:19:06,284] {standard_task_runner.py:77} INFO - Job 134: Subtask query_from_astra_db
+[2022-02-04 02:19:06,441] {logging_mixin.py:109} INFO - Running <TaskInstance: Sample_one.query_from_astra_db manual__2022-02-04T02:19:00.083359+00:00 [running]> on host 8c7de8c21c73
+[2022-02-04 02:19:06,739] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=vathana
+AIRFLOW_CTX_DAG_ID=Sample_one
+AIRFLOW_CTX_TASK_ID=query_from_astra_db
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-04T02:19:00.083359+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-04T02:19:00.083359+00:00
+[2022-02-04 02:19:06,748] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-04 02:19:06,751] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-04 02:19:06,753] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-04 02:19:06,757] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-04 02:19:06,763] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-04 02:19:06,771] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-04 02:19:06,774] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-04 02:19:06,778] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-04 02:19:06,779] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-04 02:19:06,783] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-04 02:19:06,785] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-04 02:19:06,793] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-04 02:19:06,828] {logging_mixin.py:109} INFO - None
+[2022-02-04 02:19:06,830] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-04 02:19:06,892] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=Sample_one, task_id=query_from_astra_db, execution_date=20220204T021900, start_date=20220204T021906, end_date=20220204T021906
+[2022-02-04 02:19:07,002] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-04 02:19:07,070] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

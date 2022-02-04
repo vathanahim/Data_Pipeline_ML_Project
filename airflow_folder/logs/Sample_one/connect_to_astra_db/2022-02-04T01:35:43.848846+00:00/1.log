@@ -1,0 +1,96 @@
+[2022-02-04 01:35:45,767] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-04T01:35:43.848846+00:00 [queued]>
+[2022-02-04 01:35:45,785] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-04T01:35:43.848846+00:00 [queued]>
+[2022-02-04 01:35:45,786] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-04 01:35:45,788] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-02-04 01:35:45,789] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-04 01:35:45,807] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): connect_to_astra_db> on 2022-02-04 01:35:43.848846+00:00
+[2022-02-04 01:35:45,822] {standard_task_runner.py:52} INFO - Started process 91 to run task
+[2022-02-04 01:35:45,836] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Sample_one', 'connect_to_astra_db', 'manual__2022-02-04T01:35:43.848846+00:00', '--job-id', '89', '--raw', '--subdir', 'DAGS_FOLDER/astradb.py', '--cfg-path', '/tmp/tmp_lftt_ji', '--error-file', '/tmp/tmp3fzzhfh9']
+[2022-02-04 01:35:45,839] {standard_task_runner.py:77} INFO - Job 89: Subtask connect_to_astra_db
+[2022-02-04 01:35:46,026] {logging_mixin.py:109} INFO - Running <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-04T01:35:43.848846+00:00 [running]> on host 8c7de8c21c73
+[2022-02-04 01:35:46,175] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=vathana
+AIRFLOW_CTX_DAG_ID=Sample_one
+AIRFLOW_CTX_TASK_ID=connect_to_astra_db
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-04T01:35:43.848846+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-04T01:35:43.848846+00:00
+[2022-02-04 01:35:46,634] {astradb.py:23} WARNING - Downgrading core protocol version from 66 to 65 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:fa1d4c30-bd4e-401a-ab7e-25ee24b01028. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-04 01:35:46,843] {astradb.py:23} WARNING - Downgrading core protocol version from 65 to 5 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:fa1d4c30-bd4e-401a-ab7e-25ee24b01028. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-04 01:35:46,972] {libevreactor.py:370} ERROR - Closing connection <LibevConnection(139672803870800) 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:fa1d4c30-bd4e-401a-ab7e-25ee24b01028> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+[2022-02-04 01:35:46,975] {astradb.py:23} WARNING - Downgrading core protocol version from 5 to 4 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:fa1d4c30-bd4e-401a-ab7e-25ee24b01028. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-04 01:35:47,330] {policies.py:292} INFO - Using datacenter 'us-east1' for DCAwareRoundRobinPolicy (via host '3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:fa1d4c30-bd4e-401a-ab7e-25ee24b01028'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+[2022-02-04 01:35:48,011] {python.py:175} INFO - Done. Returned value was: <cassandra.cluster.Session object at 0x7f081a6c0b50>
+[2022-02-04 01:35:48,013] {xcom.py:334} ERROR - Could not serialize the XCom value into JSON. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config.
+[2022-02-04 01:35:48,014] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    self.xcom_push(key=XCOM_RETURN_KEY, value=result)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2141, in xcom_push
+    session=session,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 100, in set
+    value = XCom.serialize_value(value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 331, in serialize_value
+    return json.dumps(value).encode('UTF-8')
+  File "/usr/local/lib/python3.7/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Session is not JSON serializable
+[2022-02-04 01:35:48,036] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=Sample_one, task_id=connect_to_astra_db, execution_date=20220204T013543, start_date=20220204T013545, end_date=20220204T013548
+[2022-02-04 01:35:48,061] {standard_task_runner.py:92} ERROR - Failed to execute job 89 for task connect_to_astra_db
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    self.xcom_push(key=XCOM_RETURN_KEY, value=result)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2141, in xcom_push
+    session=session,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 100, in set
+    value = XCom.serialize_value(value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 331, in serialize_value
+    return json.dumps(value).encode('UTF-8')
+  File "/usr/local/lib/python3.7/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Session is not JSON serializable
+[2022-02-04 01:35:48,107] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-02-04 01:35:48,166] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

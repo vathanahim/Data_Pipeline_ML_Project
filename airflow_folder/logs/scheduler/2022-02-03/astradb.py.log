@@ -1,0 +1,1130 @@
+[2022-02-03 23:01:43,375] {processor.py:163} INFO - Started process (PID=40) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:01:43,378] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:01:43,382] {logging_mixin.py:109} INFO - [2022-02-03 23:01:43,381] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:01:43,495] {logging_mixin.py:109} INFO - [2022-02-03 23:01:43,490] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 19, in <module>
+    end = DummyOperator(tast_id='start', dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/dummy.py", line 34, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['task_id'] is required
+[2022-02-03 23:01:43,522] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:01:43,577] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.207 seconds
+[2022-02-03 23:02:37,333] {processor.py:163} INFO - Started process (PID=225) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:02:37,336] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:02:37,337] {logging_mixin.py:109} INFO - [2022-02-03 23:02:37,337] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:02:37,364] {logging_mixin.py:109} INFO - [2022-02-03 23:02:37,359] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 19, in <module>
+    end = DummyOperator(tast_id='start', dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/dummy.py", line 34, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['task_id'] is required
+[2022-02-03 23:02:37,383] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:02:37,393] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.064 seconds
+[2022-02-03 23:03:08,101] {processor.py:163} INFO - Started process (PID=284) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:03:08,103] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:03:08,105] {logging_mixin.py:109} INFO - [2022-02-03 23:03:08,105] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:03:08,137] {logging_mixin.py:109} INFO - [2022-02-03 23:03:08,133] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 19, in <module>
+    end = DummyOperator(tast_id='start', dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/dummy.py", line 34, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['task_id'] is required
+[2022-02-03 23:03:08,157] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:03:08,167] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.069 seconds
+[2022-02-03 23:03:38,762] {processor.py:163} INFO - Started process (PID=337) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:03:38,765] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:03:38,766] {logging_mixin.py:109} INFO - [2022-02-03 23:03:38,766] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:03:38,785] {logging_mixin.py:109} INFO - [2022-02-03 23:03:38,781] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 19, in <module>
+    end = DummyOperator(tast_id='start', dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/dummy.py", line 34, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['task_id'] is required
+[2022-02-03 23:03:38,809] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:03:38,822] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.065 seconds
+[2022-02-03 23:04:09,258] {processor.py:163} INFO - Started process (PID=391) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:09,261] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:04:09,263] {logging_mixin.py:109} INFO - [2022-02-03 23:04:09,263] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:09,279] {logging_mixin.py:109} INFO - [2022-02-03 23:04:09,276] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 19, in <module>
+    end = DummyOperator(tast_id='start', dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/dummy.py", line 34, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['task_id'] is required
+[2022-02-03 23:04:09,297] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:09,307] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.056 seconds
+[2022-02-03 23:04:14,345] {processor.py:163} INFO - Started process (PID=415) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:14,347] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:04:14,348] {logging_mixin.py:109} INFO - [2022-02-03 23:04:14,348] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:14,359] {logging_mixin.py:109} INFO - [2022-02-03 23:04:14,357] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 15
+    with DAG(dag_id='Sample_one', default_args=default_args, catchup=False, schedule_interval='@once')
+                                                                                                     ^
+SyntaxError: invalid syntax
+[2022-02-03 23:04:14,380] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:14,391] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.050 seconds
+[2022-02-03 23:04:20,583] {processor.py:163} INFO - Started process (PID=420) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:20,585] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:04:20,586] {logging_mixin.py:109} INFO - [2022-02-03 23:04:20,586] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:20,597] {logging_mixin.py:109} INFO - [2022-02-03 23:04:20,595] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 16
+    default_args=default_args, catchup=False, schedule_interval='@once')
+                                                                       ^
+SyntaxError: invalid syntax
+[2022-02-03 23:04:20,615] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:20,625] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.046 seconds
+[2022-02-03 23:04:23,745] {processor.py:163} INFO - Started process (PID=423) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:23,750] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:04:23,752] {logging_mixin.py:109} INFO - [2022-02-03 23:04:23,752] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:23,763] {logging_mixin.py:109} INFO - [2022-02-03 23:04:23,762] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 17
+    catchup=False, schedule_interval='@once')
+                                            ^
+SyntaxError: invalid syntax
+[2022-02-03 23:04:23,783] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:23,793] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.052 seconds
+[2022-02-03 23:04:25,831] {processor.py:163} INFO - Started process (PID=433) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:25,833] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:04:25,835] {logging_mixin.py:109} INFO - [2022-02-03 23:04:25,835] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:25,845] {logging_mixin.py:109} INFO - [2022-02-03 23:04:25,844] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 18
+    schedule_interval='@once')
+                             ^
+SyntaxError: invalid syntax
+[2022-02-03 23:04:25,868] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:25,883] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.059 seconds
+[2022-02-03 23:04:29,630] {processor.py:163} INFO - Started process (PID=441) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:29,633] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:04:29,636] {logging_mixin.py:109} INFO - [2022-02-03 23:04:29,635] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:29,651] {logging_mixin.py:109} INFO - [2022-02-03 23:04:29,649] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 20
+    start = DummyOperator(task_id='start', dag=dag)
+        ^
+IndentationError: expected an indented block
+[2022-02-03 23:04:29,689] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:29,699] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.074 seconds
+[2022-02-03 23:04:38,324] {processor.py:163} INFO - Started process (PID=449) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:38,326] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:04:38,328] {logging_mixin.py:109} INFO - [2022-02-03 23:04:38,328] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:38,352] {logging_mixin.py:109} INFO - [2022-02-03 23:04:38,348] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 22, in <module>
+    end = DummyOperator(tast_id='start', dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/dummy.py", line 34, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['task_id'] is required
+[2022-02-03 23:04:38,371] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:04:38,383] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.064 seconds
+[2022-02-03 23:05:08,614] {processor.py:163} INFO - Started process (PID=510) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:05:08,617] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:05:08,619] {logging_mixin.py:109} INFO - [2022-02-03 23:05:08,618] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:05:08,635] {logging_mixin.py:109} INFO - [2022-02-03 23:05:08,632] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 22, in <module>
+    end = DummyOperator(tast_id='start', dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/dummy.py", line 34, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['task_id'] is required
+[2022-02-03 23:05:08,654] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:05:08,665] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.054 seconds
+[2022-02-03 23:05:19,897] {processor.py:163} INFO - Started process (PID=536) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:05:19,899] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:05:19,901] {logging_mixin.py:109} INFO - [2022-02-03 23:05:19,900] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:05:19,926] {logging_mixin.py:109} INFO - [2022-02-03 23:05:19,924] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 22, in <module>
+    end = DummyOperator(tast_id='end', dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/dummy.py", line 34, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 177, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['task_id'] is required
+[2022-02-03 23:05:19,946] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:05:19,956] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.062 seconds
+[2022-02-03 23:05:43,236] {processor.py:163} INFO - Started process (PID=586) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:05:43,238] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:05:43,239] {logging_mixin.py:109} INFO - [2022-02-03 23:05:43,239] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:05:43,291] {processor.py:654} INFO - DAG(s) dict_keys(['Sample_one']) retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:05:45,674] {logging_mixin.py:109} INFO - [2022-02-03 23:05:45,673] {manager.py:496} INFO - Created Permission View: can read on DAG:Sample_one
+[2022-02-03 23:05:45,691] {logging_mixin.py:109} INFO - [2022-02-03 23:05:45,691] {manager.py:496} INFO - Created Permission View: can edit on DAG:Sample_one
+[2022-02-03 23:05:45,694] {logging_mixin.py:109} INFO - [2022-02-03 23:05:45,693] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-03 23:05:45,710] {logging_mixin.py:109} INFO - [2022-02-03 23:05:45,709] {dag.py:2415} INFO - Creating ORM DAG for Sample_one
+[2022-02-03 23:05:45,727] {logging_mixin.py:109} INFO - [2022-02-03 23:05:45,727] {dag.py:2935} INFO - Setting next_dagrun for Sample_one to 2022-02-01T00:00:00+00:00
+[2022-02-03 23:05:45,754] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 2.522 seconds
+[2022-02-03 23:06:16,231] {processor.py:163} INFO - Started process (PID=648) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:06:16,233] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:06:16,235] {logging_mixin.py:109} INFO - [2022-02-03 23:06:16,235] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:06:16,272] {processor.py:654} INFO - DAG(s) dict_keys(['Sample_one']) retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:06:16,283] {logging_mixin.py:109} INFO - [2022-02-03 23:06:16,283] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-03 23:06:16,300] {logging_mixin.py:109} INFO - [2022-02-03 23:06:16,299] {dag.py:2935} INFO - Setting next_dagrun for Sample_one to 2022-02-01T00:00:00+00:00
+[2022-02-03 23:06:16,311] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.084 seconds
+[2022-02-03 23:06:46,851] {processor.py:163} INFO - Started process (PID=701) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:06:46,854] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:06:46,855] {logging_mixin.py:109} INFO - [2022-02-03 23:06:46,855] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:06:46,895] {processor.py:654} INFO - DAG(s) dict_keys(['Sample_one']) retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:06:46,907] {logging_mixin.py:109} INFO - [2022-02-03 23:06:46,907] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-03 23:06:46,923] {logging_mixin.py:109} INFO - [2022-02-03 23:06:46,923] {dag.py:2935} INFO - Setting next_dagrun for Sample_one to 2022-02-01T00:00:00+00:00
+[2022-02-03 23:06:46,934] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.089 seconds
+[2022-02-03 23:07:17,645] {processor.py:163} INFO - Started process (PID=764) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:17,648] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:07:17,649] {logging_mixin.py:109} INFO - [2022-02-03 23:07:17,649] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:17,691] {processor.py:654} INFO - DAG(s) dict_keys(['Sample_one']) retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:17,703] {logging_mixin.py:109} INFO - [2022-02-03 23:07:17,703] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-03 23:07:17,724] {logging_mixin.py:109} INFO - [2022-02-03 23:07:17,724] {dag.py:2935} INFO - Setting next_dagrun for Sample_one to 2022-02-01T00:00:00+00:00
+[2022-02-03 23:07:17,735] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.095 seconds
+[2022-02-03 23:07:47,796] {processor.py:163} INFO - Started process (PID=816) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:47,798] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:07:47,800] {logging_mixin.py:109} INFO - [2022-02-03 23:07:47,800] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:47,834] {processor.py:654} INFO - DAG(s) dict_keys(['Sample_one']) retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:47,845] {logging_mixin.py:109} INFO - [2022-02-03 23:07:47,845] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-03 23:07:47,866] {logging_mixin.py:109} INFO - [2022-02-03 23:07:47,865] {dag.py:2935} INFO - Setting next_dagrun for Sample_one to 2022-02-01T00:00:00+00:00
+[2022-02-03 23:07:47,876] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.084 seconds
+[2022-02-03 23:07:56,260] {processor.py:163} INFO - Started process (PID=831) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:56,262] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:07:56,264] {logging_mixin.py:109} INFO - [2022-02-03 23:07:56,263] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:56,276] {logging_mixin.py:109} INFO - [2022-02-03 23:07:56,275] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 13
+    def
+       ^
+SyntaxError: invalid syntax
+[2022-02-03 23:07:56,295] {processor.py:690} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:56,298] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:56,327] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.076 seconds
+[2022-02-03 23:07:59,530] {processor.py:163} INFO - Started process (PID=835) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:59,533] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:07:59,535] {logging_mixin.py:109} INFO - [2022-02-03 23:07:59,535] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:59,547] {logging_mixin.py:109} INFO - [2022-02-03 23:07:59,545] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 13
+    def astra_connect()
+                      ^
+SyntaxError: invalid syntax
+[2022-02-03 23:07:59,565] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:07:59,576] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.050 seconds
+[2022-02-03 23:08:01,678] {processor.py:163} INFO - Started process (PID=838) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:01,680] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:08:01,681] {logging_mixin.py:109} INFO - [2022-02-03 23:08:01,681] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:01,691] {logging_mixin.py:109} INFO - [2022-02-03 23:08:01,690] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 17
+    with DAG(dag_id='Sample_one',
+       ^
+IndentationError: expected an indented block
+[2022-02-03 23:08:01,710] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:01,720] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.047 seconds
+[2022-02-03 23:08:32,635] {processor.py:163} INFO - Started process (PID=894) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:32,637] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:08:32,639] {logging_mixin.py:109} INFO - [2022-02-03 23:08:32,639] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:32,648] {logging_mixin.py:109} INFO - [2022-02-03 23:08:32,648] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 17
+    with DAG(dag_id='Sample_one',
+       ^
+IndentationError: expected an indented block
+[2022-02-03 23:08:32,676] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:32,690] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.059 seconds
+[2022-02-03 23:08:34,297] {processor.py:163} INFO - Started process (PID=898) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:34,300] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:08:34,305] {logging_mixin.py:109} INFO - [2022-02-03 23:08:34,305] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:34,320] {logging_mixin.py:109} INFO - [2022-02-03 23:08:34,317] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 18
+    with DAG(dag_id='Sample_one',
+       ^
+IndentationError: expected an indented block
+[2022-02-03 23:08:34,369] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:34,387] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.099 seconds
+[2022-02-03 23:08:39,644] {processor.py:163} INFO - Started process (PID=919) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:39,646] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:08:39,648] {logging_mixin.py:109} INFO - [2022-02-03 23:08:39,647] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:39,658] {logging_mixin.py:109} INFO - [2022-02-03 23:08:39,657] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 21
+    with DAG(dag_id='Sample_one',
+       ^
+IndentationError: expected an indented block
+[2022-02-03 23:08:39,679] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:39,689] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.049 seconds
+[2022-02-03 23:08:52,802] {processor.py:163} INFO - Started process (PID=944) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:52,806] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:08:52,810] {logging_mixin.py:109} INFO - [2022-02-03 23:08:52,809] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:52,840] {logging_mixin.py:109} INFO - [2022-02-03 23:08:52,838] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:08:52,880] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:52,894] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.098 seconds
+[2022-02-03 23:08:57,129] {processor.py:163} INFO - Started process (PID=949) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:57,131] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:08:57,133] {logging_mixin.py:109} INFO - [2022-02-03 23:08:57,133] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:57,161] {logging_mixin.py:109} INFO - [2022-02-03 23:08:57,158] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:08:57,182] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:08:57,190] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.068 seconds
+[2022-02-03 23:09:08,322] {processor.py:163} INFO - Started process (PID=969) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:08,325] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:09:08,326] {logging_mixin.py:109} INFO - [2022-02-03 23:09:08,326] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:08,348] {logging_mixin.py:109} INFO - [2022-02-03 23:09:08,346] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:09:08,365] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:08,375] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.057 seconds
+[2022-02-03 23:09:10,980] {processor.py:163} INFO - Started process (PID=976) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:10,982] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:09:10,983] {logging_mixin.py:109} INFO - [2022-02-03 23:09:10,983] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:11,006] {logging_mixin.py:109} INFO - [2022-02-03 23:09:11,004] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:09:11,024] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:11,034] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.058 seconds
+[2022-02-03 23:09:22,283] {processor.py:163} INFO - Started process (PID=1000) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:22,286] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:09:22,288] {logging_mixin.py:109} INFO - [2022-02-03 23:09:22,287] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:22,300] {logging_mixin.py:109} INFO - [2022-02-03 23:09:22,299] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 24
+    return session2 = cluster2.connect('iac689')
+                    ^
+SyntaxError: invalid syntax
+[2022-02-03 23:09:22,325] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:22,339] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.060 seconds
+[2022-02-03 23:09:31,922] {processor.py:163} INFO - Started process (PID=1020) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:31,924] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:09:31,925] {logging_mixin.py:109} INFO - [2022-02-03 23:09:31,925] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:31,947] {logging_mixin.py:109} INFO - [2022-02-03 23:09:31,945] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:09:31,966] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:31,976] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.058 seconds
+[2022-02-03 23:09:40,633] {processor.py:163} INFO - Started process (PID=1043) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:40,635] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:09:40,636] {logging_mixin.py:109} INFO - [2022-02-03 23:09:40,636] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:40,664] {logging_mixin.py:109} INFO - [2022-02-03 23:09:40,662] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:09:40,684] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:40,703] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.074 seconds
+[2022-02-03 23:09:45,165] {processor.py:163} INFO - Started process (PID=1052) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:45,168] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:09:45,169] {logging_mixin.py:109} INFO - [2022-02-03 23:09:45,169] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:45,181] {logging_mixin.py:109} INFO - [2022-02-03 23:09:45,180] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 26
+    def
+       ^
+SyntaxError: invalid syntax
+[2022-02-03 23:09:45,203] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:45,214] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.053 seconds
+[2022-02-03 23:09:53,813] {processor.py:163} INFO - Started process (PID=1069) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:53,815] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:09:53,816] {logging_mixin.py:109} INFO - [2022-02-03 23:09:53,816] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:53,827] {logging_mixin.py:109} INFO - [2022-02-03 23:09:53,826] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 29
+    with DAG(dag_id='Sample_one',
+       ^
+IndentationError: expected an indented block
+[2022-02-03 23:09:53,847] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:09:53,857] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.048 seconds
+[2022-02-03 23:10:11,684] {processor.py:163} INFO - Started process (PID=1099) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:11,686] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:10:11,687] {logging_mixin.py:109} INFO - [2022-02-03 23:10:11,687] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:11,714] {logging_mixin.py:109} INFO - [2022-02-03 23:10:11,712] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:10:11,734] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:11,749] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.069 seconds
+[2022-02-03 23:10:14,794] {processor.py:163} INFO - Started process (PID=1101) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:14,797] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:10:14,798] {logging_mixin.py:109} INFO - [2022-02-03 23:10:14,798] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:14,821] {logging_mixin.py:109} INFO - [2022-02-03 23:10:14,820] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:10:14,847] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:14,859] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.072 seconds
+[2022-02-03 23:10:19,392] {processor.py:163} INFO - Started process (PID=1122) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:19,398] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:10:19,401] {logging_mixin.py:109} INFO - [2022-02-03 23:10:19,400] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:19,419] {logging_mixin.py:109} INFO - [2022-02-03 23:10:19,417] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 27
+    session =
+             ^
+SyntaxError: invalid syntax
+[2022-02-03 23:10:19,450] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:19,460] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.078 seconds
+[2022-02-03 23:10:23,466] {processor.py:163} INFO - Started process (PID=1125) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:23,468] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:10:23,469] {logging_mixin.py:109} INFO - [2022-02-03 23:10:23,469] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:23,491] {logging_mixin.py:109} INFO - [2022-02-03 23:10:23,489] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:10:23,510] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:23,522] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.060 seconds
+[2022-02-03 23:10:54,308] {processor.py:163} INFO - Started process (PID=1179) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:54,311] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:10:54,313] {logging_mixin.py:109} INFO - [2022-02-03 23:10:54,313] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:54,329] {logging_mixin.py:109} INFO - [2022-02-03 23:10:54,327] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:10:54,348] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:10:54,358] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.055 seconds
+[2022-02-03 23:11:03,047] {processor.py:163} INFO - Started process (PID=1197) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:03,052] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:11:03,054] {logging_mixin.py:109} INFO - [2022-02-03 23:11:03,054] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:03,074] {logging_mixin.py:109} INFO - [2022-02-03 23:11:03,072] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 35
+    start = DummyOperator(task_id='start', python)
+                                          ^
+SyntaxError: positional argument follows keyword argument
+[2022-02-03 23:11:03,108] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:03,125] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.090 seconds
+[2022-02-03 23:11:05,188] {processor.py:163} INFO - Started process (PID=1200) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:05,190] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:11:05,192] {logging_mixin.py:109} INFO - [2022-02-03 23:11:05,191] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:05,202] {logging_mixin.py:109} INFO - [2022-02-03 23:11:05,201] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 35
+    start = DummyOperator(task_id='start', python_)
+                                          ^
+SyntaxError: positional argument follows keyword argument
+[2022-02-03 23:11:05,223] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:05,235] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.051 seconds
+[2022-02-03 23:11:13,209] {processor.py:163} INFO - Started process (PID=1219) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:13,212] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:11:13,214] {logging_mixin.py:109} INFO - [2022-02-03 23:11:13,214] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:13,228] {logging_mixin.py:109} INFO - [2022-02-03 23:11:13,227] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 35
+    start = PythonOperator(task_id='start', python_)
+                                           ^
+SyntaxError: positional argument follows keyword argument
+[2022-02-03 23:11:13,269] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:13,288] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.084 seconds
+[2022-02-03 23:11:18,075] {processor.py:163} INFO - Started process (PID=1231) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:18,078] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:11:18,079] {logging_mixin.py:109} INFO - [2022-02-03 23:11:18,079] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:18,089] {logging_mixin.py:109} INFO - [2022-02-03 23:11:18,088] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 35
+    start = PythonOperator(task_id='start', python_callable=)
+                                                            ^
+SyntaxError: invalid syntax
+[2022-02-03 23:11:18,108] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:18,118] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.047 seconds
+[2022-02-03 23:11:22,194] {processor.py:163} INFO - Started process (PID=1233) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:22,196] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:11:22,198] {logging_mixin.py:109} INFO - [2022-02-03 23:11:22,198] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:22,221] {logging_mixin.py:109} INFO - [2022-02-03 23:11:22,219] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:11:22,242] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:22,257] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.066 seconds
+[2022-02-03 23:11:23,044] {processor.py:163} INFO - Started process (PID=1236) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:23,046] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:11:23,047] {logging_mixin.py:109} INFO - [2022-02-03 23:11:23,047] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:23,074] {logging_mixin.py:109} INFO - [2022-02-03 23:11:23,072] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:11:23,093] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:23,102] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.061 seconds
+[2022-02-03 23:11:35,840] {processor.py:163} INFO - Started process (PID=1256) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:35,842] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:11:35,844] {logging_mixin.py:109} INFO - [2022-02-03 23:11:35,844] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:35,866] {logging_mixin.py:109} INFO - [2022-02-03 23:11:35,864] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:11:35,885] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:35,894] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.058 seconds
+[2022-02-03 23:11:44,087] {processor.py:163} INFO - Started process (PID=1276) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:44,090] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:11:44,091] {logging_mixin.py:109} INFO - [2022-02-03 23:11:44,091] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:44,113] {logging_mixin.py:109} INFO - [2022-02-03 23:11:44,111] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:11:44,134] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:44,144] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.060 seconds
+[2022-02-03 23:11:51,000] {processor.py:163} INFO - Started process (PID=1298) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:51,002] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:11:51,004] {logging_mixin.py:109} INFO - [2022-02-03 23:11:51,004] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:51,022] {logging_mixin.py:109} INFO - [2022-02-03 23:11:51,020] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 37
+    end = DummyOperator(task_id='query_from_astra_db', python)
+                                                      ^
+SyntaxError: positional argument follows keyword argument
+[2022-02-03 23:11:51,041] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:51,054] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.059 seconds
+[2022-02-03 23:11:57,554] {processor.py:163} INFO - Started process (PID=1303) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:57,563] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:11:57,566] {logging_mixin.py:109} INFO - [2022-02-03 23:11:57,566] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:57,575] {logging_mixin.py:109} INFO - [2022-02-03 23:11:57,575] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 37
+    end = DummyOperator(task_id='query_from_astra_db', python_callable=)
+                                                                       ^
+SyntaxError: invalid syntax
+[2022-02-03 23:11:57,594] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:57,603] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.060 seconds
+[2022-02-03 23:11:59,565] {processor.py:163} INFO - Started process (PID=1304) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:59,570] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:11:59,572] {logging_mixin.py:109} INFO - [2022-02-03 23:11:59,572] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:59,603] {logging_mixin.py:109} INFO - [2022-02-03 23:11:59,600] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:11:59,649] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:11:59,659] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.099 seconds
+[2022-02-03 23:12:01,724] {processor.py:163} INFO - Started process (PID=1307) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:12:01,726] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:12:01,728] {logging_mixin.py:109} INFO - [2022-02-03 23:12:01,728] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:12:01,752] {logging_mixin.py:109} INFO - [2022-02-03 23:12:01,750] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:12:01,770] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:12:01,780] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.062 seconds
+[2022-02-03 23:12:32,293] {processor.py:163} INFO - Started process (PID=1370) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:12:32,295] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:12:32,297] {logging_mixin.py:109} INFO - [2022-02-03 23:12:32,296] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:12:32,312] {logging_mixin.py:109} INFO - [2022-02-03 23:12:32,310] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:12:32,332] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:12:32,341] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.052 seconds
+[2022-02-03 23:13:02,880] {processor.py:163} INFO - Started process (PID=1424) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:13:02,883] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:13:02,884] {logging_mixin.py:109} INFO - [2022-02-03 23:13:02,884] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:13:02,900] {logging_mixin.py:109} INFO - [2022-02-03 23:13:02,898] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:13:02,920] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:13:02,930] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.053 seconds
+[2022-02-03 23:13:33,679] {processor.py:163} INFO - Started process (PID=1487) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:13:33,683] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:13:33,684] {logging_mixin.py:109} INFO - [2022-02-03 23:13:33,684] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:13:33,700] {logging_mixin.py:109} INFO - [2022-02-03 23:13:33,699] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:13:33,723] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:13:33,736] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.063 seconds
+[2022-02-03 23:15:03,430] {processor.py:163} INFO - Started process (PID=40) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:15:03,444] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:15:03,454] {logging_mixin.py:109} INFO - [2022-02-03 23:15:03,453] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:15:03,515] {logging_mixin.py:109} INFO - [2022-02-03 23:15:03,505] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:15:03,539] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:15:03,556] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.163 seconds
+[2022-02-03 23:30:29,601] {processor.py:163} INFO - Started process (PID=40) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:30:29,613] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:30:29,616] {logging_mixin.py:109} INFO - [2022-02-03 23:30:29,616] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:30:29,659] {logging_mixin.py:109} INFO - [2022-02-03 23:30:29,655] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:30:29,690] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:30:29,711] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.114 seconds
+[2022-02-03 23:31:00,573] {processor.py:163} INFO - Started process (PID=92) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:31:00,576] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:31:00,579] {logging_mixin.py:109} INFO - [2022-02-03 23:31:00,578] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:31:00,594] {logging_mixin.py:109} INFO - [2022-02-03 23:31:00,591] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:31:00,624] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:31:00,650] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.080 seconds
+[2022-02-03 23:31:30,881] {processor.py:163} INFO - Started process (PID=148) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:31:30,886] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:31:30,890] {logging_mixin.py:109} INFO - [2022-02-03 23:31:30,889] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:31:30,924] {logging_mixin.py:109} INFO - [2022-02-03 23:31:30,918] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:31:30,955] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:31:30,973] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.097 seconds
+[2022-02-03 23:32:01,858] {processor.py:163} INFO - Started process (PID=212) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:32:01,860] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:32:01,862] {logging_mixin.py:109} INFO - [2022-02-03 23:32:01,862] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:32:01,882] {logging_mixin.py:109} INFO - [2022-02-03 23:32:01,877] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:32:01,914] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:32:01,934] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.082 seconds
+[2022-02-03 23:32:32,672] {processor.py:163} INFO - Started process (PID=265) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:32:32,674] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:32:32,676] {logging_mixin.py:109} INFO - [2022-02-03 23:32:32,676] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:32:32,699] {logging_mixin.py:109} INFO - [2022-02-03 23:32:32,697] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:32:32,727] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:32:32,743] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.076 seconds
+[2022-02-03 23:33:03,748] {processor.py:163} INFO - Started process (PID=318) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:33:03,752] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:33:03,754] {logging_mixin.py:109} INFO - [2022-02-03 23:33:03,754] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:33:03,773] {logging_mixin.py:109} INFO - [2022-02-03 23:33:03,771] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:33:03,795] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:33:03,809] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.064 seconds
+[2022-02-03 23:33:34,153] {processor.py:163} INFO - Started process (PID=383) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:33:34,156] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:33:34,159] {logging_mixin.py:109} INFO - [2022-02-03 23:33:34,159] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:33:34,207] {logging_mixin.py:109} INFO - [2022-02-03 23:33:34,192] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:33:34,248] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:33:34,265] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.118 seconds
+[2022-02-03 23:34:04,568] {processor.py:163} INFO - Started process (PID=435) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:34:04,571] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:34:04,573] {logging_mixin.py:109} INFO - [2022-02-03 23:34:04,573] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:34:04,596] {logging_mixin.py:109} INFO - [2022-02-03 23:34:04,592] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:34:04,634] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:34:04,658] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.096 seconds
+[2022-02-03 23:34:35,191] {processor.py:163} INFO - Started process (PID=488) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:34:35,194] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:34:35,197] {logging_mixin.py:109} INFO - [2022-02-03 23:34:35,196] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:34:35,214] {logging_mixin.py:109} INFO - [2022-02-03 23:34:35,211] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:34:35,243] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:34:35,264] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.082 seconds
+[2022-02-03 23:35:06,226] {processor.py:163} INFO - Started process (PID=554) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:35:06,229] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:35:06,232] {logging_mixin.py:109} INFO - [2022-02-03 23:35:06,231] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:35:06,255] {logging_mixin.py:109} INFO - [2022-02-03 23:35:06,252] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:35:06,291] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:35:06,301] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.089 seconds
+[2022-02-03 23:35:36,481] {processor.py:163} INFO - Started process (PID=606) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:35:36,484] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:35:36,486] {logging_mixin.py:109} INFO - [2022-02-03 23:35:36,485] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:35:36,511] {logging_mixin.py:109} INFO - [2022-02-03 23:35:36,509] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:35:36,537] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:35:36,551] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.075 seconds
+[2022-02-03 23:36:06,989] {processor.py:163} INFO - Started process (PID=664) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:36:06,992] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:36:06,997] {logging_mixin.py:109} INFO - [2022-02-03 23:36:06,996] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:36:07,034] {logging_mixin.py:109} INFO - [2022-02-03 23:36:07,031] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:36:07,066] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:36:07,099] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.115 seconds
+[2022-02-03 23:36:37,854] {processor.py:163} INFO - Started process (PID=717) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:36:37,856] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:36:37,858] {logging_mixin.py:109} INFO - [2022-02-03 23:36:37,858] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:36:37,880] {logging_mixin.py:109} INFO - [2022-02-03 23:36:37,877] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:36:37,909] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:36:37,924] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.077 seconds
+[2022-02-03 23:37:08,212] {processor.py:163} INFO - Started process (PID=779) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:37:08,227] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:37:08,231] {logging_mixin.py:109} INFO - [2022-02-03 23:37:08,230] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:37:08,304] {logging_mixin.py:109} INFO - [2022-02-03 23:37:08,295] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:37:08,360] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:37:08,408] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.201 seconds
+[2022-02-03 23:37:38,810] {processor.py:163} INFO - Started process (PID=834) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:37:38,813] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:37:38,815] {logging_mixin.py:109} INFO - [2022-02-03 23:37:38,815] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:37:38,834] {logging_mixin.py:109} INFO - [2022-02-03 23:37:38,833] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:37:38,859] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:37:38,877] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.071 seconds
+[2022-02-03 23:38:09,326] {processor.py:163} INFO - Started process (PID=886) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:38:09,333] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:38:09,334] {logging_mixin.py:109} INFO - [2022-02-03 23:38:09,334] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:38:09,351] {logging_mixin.py:109} INFO - [2022-02-03 23:38:09,349] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:38:09,379] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:38:09,406] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.085 seconds
+[2022-02-03 23:38:40,029] {processor.py:163} INFO - Started process (PID=950) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:38:40,032] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:38:40,033] {logging_mixin.py:109} INFO - [2022-02-03 23:38:40,033] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:38:40,058] {logging_mixin.py:109} INFO - [2022-02-03 23:38:40,054] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:38:40,084] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:38:40,095] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.071 seconds
+[2022-02-03 23:39:10,359] {processor.py:163} INFO - Started process (PID=1005) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:39:10,363] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:39:10,365] {logging_mixin.py:109} INFO - [2022-02-03 23:39:10,365] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:39:10,390] {logging_mixin.py:109} INFO - [2022-02-03 23:39:10,384] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:39:10,437] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:39:10,452] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.109 seconds
+[2022-02-03 23:39:40,812] {processor.py:163} INFO - Started process (PID=1057) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:39:40,815] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:39:40,817] {logging_mixin.py:109} INFO - [2022-02-03 23:39:40,817] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:39:40,831] {logging_mixin.py:109} INFO - [2022-02-03 23:39:40,829] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:39:40,859] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:39:40,877] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.069 seconds
+[2022-02-03 23:40:11,522] {processor.py:163} INFO - Started process (PID=1122) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:40:11,526] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:40:11,529] {logging_mixin.py:109} INFO - [2022-02-03 23:40:11,529] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:40:11,557] {logging_mixin.py:109} INFO - [2022-02-03 23:40:11,553] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:40:11,597] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:40:11,618] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.105 seconds
+[2022-02-03 23:40:42,291] {processor.py:163} INFO - Started process (PID=1174) to work on /opt/airflow/dags/astradb.py
+[2022-02-03 23:40:42,293] {processor.py:642} INFO - Processing file /opt/airflow/dags/astradb.py for tasks to queue
+[2022-02-03 23:40:42,296] {logging_mixin.py:109} INFO - [2022-02-03 23:40:42,296] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/astradb.py
+[2022-02-03 23:40:42,319] {logging_mixin.py:109} INFO - [2022-02-03 23:40:42,316] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/astradb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/astradb.py", line 5, in <module>
+    import cassandra
+ModuleNotFoundError: No module named 'cassandra'
+[2022-02-03 23:40:42,358] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/astradb.py
+[2022-02-03 23:40:42,382] {processor.py:171} INFO - Processing /opt/airflow/dags/astradb.py took 0.098 seconds
