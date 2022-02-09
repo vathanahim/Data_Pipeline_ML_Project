@@ -1,0 +1,23 @@
+[2022-02-08 01:51:36,942] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.query_from_astra_db manual__2022-02-08T01:51:28.153821+00:00 [queued]>
+[2022-02-08 01:51:36,970] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.query_from_astra_db manual__2022-02-08T01:51:28.153821+00:00 [queued]>
+[2022-02-08 01:51:36,971] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-08 01:51:36,972] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-02-08 01:51:36,973] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-08 01:51:36,996] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): query_from_astra_db> on 2022-02-08 01:51:28.153821+00:00
+[2022-02-08 01:51:37,005] {standard_task_runner.py:52} INFO - Started process 140 to run task
+[2022-02-08 01:51:37,010] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Sample_one', 'query_from_astra_db', 'manual__2022-02-08T01:51:28.153821+00:00', '--job-id', '350', '--raw', '--subdir', 'DAGS_FOLDER/astradb.py', '--cfg-path', '/tmp/tmph5chux2r', '--error-file', '/tmp/tmp6b0084tv']
+[2022-02-08 01:51:37,015] {standard_task_runner.py:77} INFO - Job 350: Subtask query_from_astra_db
+[2022-02-08 01:51:37,094] {logging_mixin.py:109} INFO - Running <TaskInstance: Sample_one.query_from_astra_db manual__2022-02-08T01:51:28.153821+00:00 [running]> on host e649dfbf9d8d
+[2022-02-08 01:51:37,163] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=vathana
+AIRFLOW_CTX_DAG_ID=Sample_one
+AIRFLOW_CTX_TASK_ID=query_from_astra_db
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-08T01:51:28.153821+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-08T01:51:28.153821+00:00
+[2022-02-08 01:51:37,165] {logging_mixin.py:109} INFO - /opt/***
+[2022-02-08 01:51:37,166] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-08 01:51:37,184] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=Sample_one, task_id=query_from_astra_db, execution_date=20220208T015128, start_date=20220208T015136, end_date=20220208T015137
+[2022-02-08 01:51:37,225] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-08 01:51:37,264] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

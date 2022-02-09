@@ -1,0 +1,114 @@
+[2022-02-09 01:43:38,012] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-09T01:43:36.094541+00:00 [queued]>
+[2022-02-09 01:43:38,022] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-09T01:43:36.094541+00:00 [queued]>
+[2022-02-09 01:43:38,022] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 01:43:38,023] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-02-09 01:43:38,023] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 01:43:38,036] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): connect_to_astra_db> on 2022-02-09 01:43:36.094541+00:00
+[2022-02-09 01:43:38,045] {standard_task_runner.py:52} INFO - Started process 354 to run task
+[2022-02-09 01:43:38,050] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Sample_one', 'connect_to_astra_db', 'manual__2022-02-09T01:43:36.094541+00:00', '--job-id', '356', '--raw', '--subdir', 'DAGS_FOLDER/astradb.py', '--cfg-path', '/tmp/tmp2pcktzos', '--error-file', '/tmp/tmp7jq2v4u1']
+[2022-02-09 01:43:38,051] {standard_task_runner.py:77} INFO - Job 356: Subtask connect_to_astra_db
+[2022-02-09 01:43:38,112] {logging_mixin.py:109} INFO - Running <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-09T01:43:36.094541+00:00 [running]> on host e649dfbf9d8d
+[2022-02-09 01:43:38,169] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=vathana
+AIRFLOW_CTX_DAG_ID=Sample_one
+AIRFLOW_CTX_TASK_ID=connect_to_astra_db
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-09T01:43:36.094541+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-09T01:43:36.094541+00:00
+[2022-02-09 01:43:38,171] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 01:43:38,172] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 01:43:38,172] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 01:43:38,173] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 01:43:38,173] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 01:43:38,174] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 01:43:38,174] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 01:43:38,175] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 01:43:38,175] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 01:43:38,176] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 01:43:38,176] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 01:43:38,177] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 01:43:38,563] {astradb.py:27} WARNING - Downgrading core protocol version from 66 to 65 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:572cf0bc-a5fe-4303-8200-4dd6c0e9bba9. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-09 01:43:38,709] {astradb.py:27} WARNING - Downgrading core protocol version from 65 to 5 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:572cf0bc-a5fe-4303-8200-4dd6c0e9bba9. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-09 01:43:38,845] {libevreactor.py:370} ERROR - Closing connection <LibevConnection(139835596823056) 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:572cf0bc-a5fe-4303-8200-4dd6c0e9bba9> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+[2022-02-09 01:43:38,857] {astradb.py:27} WARNING - Downgrading core protocol version from 5 to 4 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:572cf0bc-a5fe-4303-8200-4dd6c0e9bba9. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-09 01:43:39,232] {policies.py:292} INFO - Using datacenter 'us-east1' for DCAwareRoundRobinPolicy (via host '3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:572cf0bc-a5fe-4303-8200-4dd6c0e9bba9'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+[2022-02-09 01:43:39,822] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/astradb.py", line 42, in astra_connect
+    km.fit(df_kmeans_scale)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/cluster/_kmeans.py", line 1146, in fit
+    self._check_params(X)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/cluster/_kmeans.py", line 948, in _check_params
+    f"n_samples={X.shape[0]} should be >= n_clusters={self.n_clusters}."
+ValueError: n_samples=2 should be >= n_clusters=4.
+[2022-02-09 01:43:39,839] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=Sample_one, task_id=connect_to_astra_db, execution_date=20220209T014336, start_date=20220209T014338, end_date=20220209T014339
+[2022-02-09 01:43:39,855] {standard_task_runner.py:92} ERROR - Failed to execute job 356 for task connect_to_astra_db
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/astradb.py", line 42, in astra_connect
+    km.fit(df_kmeans_scale)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/cluster/_kmeans.py", line 1146, in fit
+    self._check_params(X)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/cluster/_kmeans.py", line 948, in _check_params
+    f"n_samples={X.shape[0]} should be >= n_clusters={self.n_clusters}."
+ValueError: n_samples=2 should be >= n_clusters=4.
+[2022-02-09 01:43:39,891] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-02-09 01:43:39,930] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

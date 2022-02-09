@@ -1,2 +1,6 @@
 pandas==1.3.5
 cassandra-driver==3.25.0
+sklearn
+matplotlib
+plotly
+

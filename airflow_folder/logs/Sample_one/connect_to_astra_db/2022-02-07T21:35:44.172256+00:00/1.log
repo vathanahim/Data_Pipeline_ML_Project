@@ -1,0 +1,79 @@
+[2022-02-07 21:35:46,844] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-07T21:35:44.172256+00:00 [queued]>
+[2022-02-07 21:35:46,858] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-07T21:35:44.172256+00:00 [queued]>
+[2022-02-07 21:35:46,859] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-07 21:35:46,860] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-02-07 21:35:46,861] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-07 21:35:46,876] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): connect_to_astra_db> on 2022-02-07 21:35:44.172256+00:00
+[2022-02-07 21:35:46,883] {standard_task_runner.py:52} INFO - Started process 86 to run task
+[2022-02-07 21:35:46,889] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Sample_one', 'connect_to_astra_db', 'manual__2022-02-07T21:35:44.172256+00:00', '--job-id', '216', '--raw', '--subdir', 'DAGS_FOLDER/astradb.py', '--cfg-path', '/tmp/tmp7oqhyng1', '--error-file', '/tmp/tmpmujhhdfo']
+[2022-02-07 21:35:46,893] {standard_task_runner.py:77} INFO - Job 216: Subtask connect_to_astra_db
+[2022-02-07 21:35:46,965] {logging_mixin.py:109} INFO - Running <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-07T21:35:44.172256+00:00 [running]> on host e0bb9151d97e
+[2022-02-07 21:35:47,027] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=vathana
+AIRFLOW_CTX_DAG_ID=Sample_one
+AIRFLOW_CTX_TASK_ID=connect_to_astra_db
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-07T21:35:44.172256+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-07T21:35:44.172256+00:00
+[2022-02-07 21:35:47,034] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/astradb.py", line 25, in astra_connect
+    cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
+  File "cassandra/cluster.py", line 1125, in cassandra.cluster.Cluster.__init__
+  File "/home/airflow/.local/lib/python3.7/site-packages/cassandra/datastax/cloud/__init__.py", line 88, in get_cloud_config
+    config = read_cloud_config_from_zip(cloud_config, create_pyopenssl_context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/cassandra/datastax/cloud/__init__.py", line 103, in read_cloud_config_from_zip
+    tmp_dir = tempfile.mkdtemp(dir=base_dir)
+  File "/usr/local/lib/python3.7/tempfile.py", line 366, in mkdtemp
+    _os.mkdir(file, 0o700)
+PermissionError: [Errno 13] Permission denied: 'tmp4_cgauak'
+[2022-02-07 21:35:47,055] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=Sample_one, task_id=connect_to_astra_db, execution_date=20220207T213544, start_date=20220207T213546, end_date=20220207T213547
+[2022-02-07 21:35:47,076] {standard_task_runner.py:92} ERROR - Failed to execute job 216 for task connect_to_astra_db
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/astradb.py", line 25, in astra_connect
+    cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
+  File "cassandra/cluster.py", line 1125, in cassandra.cluster.Cluster.__init__
+  File "/home/airflow/.local/lib/python3.7/site-packages/cassandra/datastax/cloud/__init__.py", line 88, in get_cloud_config
+    config = read_cloud_config_from_zip(cloud_config, create_pyopenssl_context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/cassandra/datastax/cloud/__init__.py", line 103, in read_cloud_config_from_zip
+    tmp_dir = tempfile.mkdtemp(dir=base_dir)
+  File "/usr/local/lib/python3.7/tempfile.py", line 366, in mkdtemp
+    _os.mkdir(file, 0o700)
+PermissionError: [Errno 13] Permission denied: 'tmp4_cgauak'
+[2022-02-07 21:35:47,104] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-02-07 21:35:47,146] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

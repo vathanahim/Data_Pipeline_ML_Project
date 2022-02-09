@@ -1,0 +1,28 @@
+[2022-02-09 03:05:05,523] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-09T03:05:03.278223+00:00 [queued]>
+[2022-02-09 03:05:05,541] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-09T03:05:03.278223+00:00 [queued]>
+[2022-02-09 03:05:05,543] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 03:05:05,544] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-02-09 03:05:05,545] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 03:05:05,562] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): connect_to_astra_db> on 2022-02-09 03:05:03.278223+00:00
+[2022-02-09 03:05:05,571] {standard_task_runner.py:52} INFO - Started process 1155 to run task
+[2022-02-09 03:05:05,577] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Sample_one', 'connect_to_astra_db', 'manual__2022-02-09T03:05:03.278223+00:00', '--job-id', '406', '--raw', '--subdir', 'DAGS_FOLDER/astradb.py', '--cfg-path', '/tmp/tmppv7t934v', '--error-file', '/tmp/tmpyogplqgr']
+[2022-02-09 03:05:05,579] {standard_task_runner.py:77} INFO - Job 406: Subtask connect_to_astra_db
+[2022-02-09 03:05:05,663] {logging_mixin.py:109} INFO - Running <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-09T03:05:03.278223+00:00 [running]> on host 065524cb0049
+[2022-02-09 03:05:05,730] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=vathana
+AIRFLOW_CTX_DAG_ID=Sample_one
+AIRFLOW_CTX_TASK_ID=connect_to_astra_db
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-09T03:05:03.278223+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-09T03:05:03.278223+00:00
+[2022-02-09 03:05:06,472] {astradb.py:26} WARNING - Downgrading core protocol version from 66 to 65 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:fa1d4c30-bd4e-401a-ab7e-25ee24b01028. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-09 03:05:06,624] {astradb.py:26} WARNING - Downgrading core protocol version from 65 to 5 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:fa1d4c30-bd4e-401a-ab7e-25ee24b01028. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-09 03:05:06,753] {libevreactor.py:370} ERROR - Closing connection <LibevConnection(140599003855760) 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:fa1d4c30-bd4e-401a-ab7e-25ee24b01028> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+[2022-02-09 03:05:06,756] {astradb.py:26} WARNING - Downgrading core protocol version from 5 to 4 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:fa1d4c30-bd4e-401a-ab7e-25ee24b01028. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-09 03:05:07,222] {policies.py:292} INFO - Using datacenter 'us-east1' for DCAwareRoundRobinPolicy (via host '3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:fa1d4c30-bd4e-401a-ab7e-25ee24b01028'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+[2022-02-09 03:05:15,975] {logging_mixin.py:109} INFO - 11
+[2022-02-09 03:05:15,980] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-09 03:05:16,016] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=Sample_one, task_id=connect_to_astra_db, execution_date=20220209T030503, start_date=20220209T030505, end_date=20220209T030516
+[2022-02-09 03:05:16,112] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-09 03:05:16,167] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

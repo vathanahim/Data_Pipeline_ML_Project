@@ -1,0 +1,78 @@
+[2022-02-09 02:46:41,988] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-09T02:46:38.355161+00:00 [queued]>
+[2022-02-09 02:46:42,020] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-09T02:46:38.355161+00:00 [queued]>
+[2022-02-09 02:46:42,022] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 02:46:42,024] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-02-09 02:46:42,026] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 02:46:42,051] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): connect_to_astra_db> on 2022-02-09 02:46:38.355161+00:00
+[2022-02-09 02:46:42,071] {standard_task_runner.py:52} INFO - Started process 188 to run task
+[2022-02-09 02:46:42,080] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Sample_one', 'connect_to_astra_db', 'manual__2022-02-09T02:46:38.355161+00:00', '--job-id', '394', '--raw', '--subdir', 'DAGS_FOLDER/astradb.py', '--cfg-path', '/tmp/tmp048_5fgp', '--error-file', '/tmp/tmpghvgj876']
+[2022-02-09 02:46:42,083] {standard_task_runner.py:77} INFO - Job 394: Subtask connect_to_astra_db
+[2022-02-09 02:46:42,222] {logging_mixin.py:109} INFO - Running <TaskInstance: Sample_one.connect_to_astra_db manual__2022-02-09T02:46:38.355161+00:00 [running]> on host 065524cb0049
+[2022-02-09 02:46:42,378] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=vathana
+AIRFLOW_CTX_DAG_ID=Sample_one
+AIRFLOW_CTX_TASK_ID=connect_to_astra_db
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-09T02:46:38.355161+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-09T02:46:38.355161+00:00
+[2022-02-09 02:46:42,940] {astradb.py:26} WARNING - Downgrading core protocol version from 66 to 65 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:572cf0bc-a5fe-4303-8200-4dd6c0e9bba9. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-09 02:46:43,093] {astradb.py:26} WARNING - Downgrading core protocol version from 65 to 5 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:572cf0bc-a5fe-4303-8200-4dd6c0e9bba9. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-09 02:46:43,239] {libevreactor.py:370} ERROR - Closing connection <LibevConnection(140598057134480) 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:572cf0bc-a5fe-4303-8200-4dd6c0e9bba9> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+[2022-02-09 02:46:43,246] {astradb.py:26} WARNING - Downgrading core protocol version from 5 to 4 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:572cf0bc-a5fe-4303-8200-4dd6c0e9bba9. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-09 02:46:43,635] {policies.py:292} INFO - Using datacenter 'us-east1' for DCAwareRoundRobinPolicy (via host '3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:572cf0bc-a5fe-4303-8200-4dd6c0e9bba9'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+[2022-02-09 02:46:44,445] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/astradb.py", line 41, in astra_connect
+    km.fit(df_kmeans_scale)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/cluster/_kmeans.py", line 1146, in fit
+    self._check_params(X)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/cluster/_kmeans.py", line 948, in _check_params
+    f"n_samples={X.shape[0]} should be >= n_clusters={self.n_clusters}."
+ValueError: n_samples=2 should be >= n_clusters=4.
+[2022-02-09 02:46:44,482] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=Sample_one, task_id=connect_to_astra_db, execution_date=20220209T024638, start_date=20220209T024641, end_date=20220209T024644
+[2022-02-09 02:46:44,526] {standard_task_runner.py:92} ERROR - Failed to execute job 394 for task connect_to_astra_db
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/astradb.py", line 41, in astra_connect
+    km.fit(df_kmeans_scale)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/cluster/_kmeans.py", line 1146, in fit
+    self._check_params(X)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sklearn/cluster/_kmeans.py", line 948, in _check_params
+    f"n_samples={X.shape[0]} should be >= n_clusters={self.n_clusters}."
+ValueError: n_samples=2 should be >= n_clusters=4.
+[2022-02-09 02:46:44,609] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-02-09 02:46:44,727] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
