@@ -22,7 +22,8 @@ the data in the best performing machine learning model.
 
 - How can we efficiently extract the data for these trucks?
 
-- Which machine learning models can provide the best clustering technique
+- Which machine learning models can provide the best clustering technique?
+
 - How can we create a efficient system of data extraction and cleaning in order to feed our machine learning model?
 
 
@@ -32,6 +33,9 @@ the data in the best performing machine learning model.
     - Sklearn
     - Pandas
     - Numpy
+    - Matplotlib
+    - Seaborn
+    - Altair
 - SQL within MariaDB
 - Astra DB
 - Apache Cassandra
@@ -50,6 +54,6 @@ the data in the best performing machine learning model.
 - Determine if PCA is needed to reduce dimensions of the data
 - Find the best machine learning model for this dataset by comparing results between K-means and DBSCAN
 - Create python functions for extraction and cleaning of data to streamline an efficient process for their data analytics engineers to use in order to feed data into the machine learning model
-- If time permits, create an airflow DAG to automate an end-end machine learning model system
-- If time permits, ship the airflow framework into a docker image so it can be used in other computing platforms
+- If time permits, create an airflow DAG to automate an end-end machine learning model system which includes data extraction, cleaning and processing
+- If time permits, ship the airflow framework into a docker compose file so it can be used in other computing platforms
 
