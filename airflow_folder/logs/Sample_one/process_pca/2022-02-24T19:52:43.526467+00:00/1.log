@@ -1,0 +1,81 @@
+[2022-02-24 19:53:22,095] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.process_pca manual__2022-02-24T19:52:43.526467+00:00 [queued]>
+[2022-02-24 19:53:22,206] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Sample_one.process_pca manual__2022-02-24T19:52:43.526467+00:00 [queued]>
+[2022-02-24 19:53:22,210] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-24 19:53:22,219] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-02-24 19:53:22,220] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-24 19:53:22,294] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): process_pca> on 2022-02-24 19:52:43.526467+00:00
+[2022-02-24 19:53:22,357] {standard_task_runner.py:52} INFO - Started process 169 to run task
+[2022-02-24 19:53:22,414] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Sample_one', 'process_pca', 'manual__2022-02-24T19:52:43.526467+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp0wr5zy8m', '--error-file', '/tmp/tmplkj14bmz']
+[2022-02-24 19:53:22,419] {standard_task_runner.py:77} INFO - Job 6: Subtask process_pca
+[2022-02-24 19:53:22,616] {logging_mixin.py:109} INFO - Running <TaskInstance: Sample_one.process_pca manual__2022-02-24T19:52:43.526467+00:00 [running]> on host 99813ca71bd1
+[2022-02-24 19:53:22,762] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=vathana
+AIRFLOW_CTX_DAG_ID=Sample_one
+AIRFLOW_CTX_TASK_ID=process_pca
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-24T19:52:43.526467+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-24T19:52:43.526467+00:00
+[2022-02-24 19:53:23,086] {dag.py:77} WARNING - Downgrading core protocol version from 66 to 65 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:33c650af-8c56-4bb3-9716-13c8a515600f. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-24 19:53:23,227] {dag.py:77} WARNING - Downgrading core protocol version from 65 to 5 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:33c650af-8c56-4bb3-9716-13c8a515600f. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-24 19:53:23,373] {libevreactor.py:370} ERROR - Closing connection <LibevConnection(140066555249744) 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:33c650af-8c56-4bb3-9716-13c8a515600f> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+[2022-02-24 19:53:23,376] {dag.py:77} WARNING - Downgrading core protocol version from 5 to 4 for 3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:33c650af-8c56-4bb3-9716-13c8a515600f. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+[2022-02-24 19:53:23,743] {policies.py:292} INFO - Using datacenter 'us-east1' for DCAwareRoundRobinPolicy (via host '3844b209-e6f1-4eda-8605-b019293c1e08-us-east1.db.astra.datastax.com:29042:33c650af-8c56-4bb3-9716-13c8a515600f'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+[2022-02-24 19:53:26,019] {dag.py:102} ERROR - Error preparing query:
+Traceback (most recent call last):
+  File "cassandra/cluster.py", line 3069, in cassandra.cluster.Session.prepare
+  File "cassandra/cluster.py", line 4894, in cassandra.cluster.ResponseFuture.result
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Undefined column name pca1"
+[2022-02-24 19:53:26,023] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag.py", line 102, in pca_process
+    prepared = session.prepare(query)
+  File "cassandra/cluster.py", line 3072, in cassandra.cluster.Session.prepare
+  File "cassandra/cluster.py", line 3069, in cassandra.cluster.Session.prepare
+  File "cassandra/cluster.py", line 4894, in cassandra.cluster.ResponseFuture.result
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Undefined column name pca1"
+[2022-02-24 19:53:26,137] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=Sample_one, task_id=process_pca, execution_date=20220224T195243, start_date=20220224T195322, end_date=20220224T195326
+[2022-02-24 19:53:26,325] {standard_task_runner.py:92} ERROR - Failed to execute job 6 for task process_pca
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag.py", line 102, in pca_process
+    prepared = session.prepare(query)
+  File "cassandra/cluster.py", line 3072, in cassandra.cluster.Session.prepare
+  File "cassandra/cluster.py", line 3069, in cassandra.cluster.Session.prepare
+  File "cassandra/cluster.py", line 4894, in cassandra.cluster.ResponseFuture.result
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Undefined column name pca1"
+[2022-02-24 19:53:26,454] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-02-24 19:53:26,751] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
