@@ -57,3 +57,7 @@ the data in the best performing machine learning model.
 - If time permits, create an airflow DAG to automate an end-end machine learning model system which includes data extraction, cleaning and processing
 - If time permits, ship the airflow framework into a docker compose file so it can be used in other computing platforms
 
+
+## Project Architecture
+
+<img width="1363" alt="Screen Shot 2022-03-02 at 5 43 59 PM" src="https://user-images.githubusercontent.com/70493707/156462377-04801893-5c94-4097-8020-28d9d8b3141c.png">
