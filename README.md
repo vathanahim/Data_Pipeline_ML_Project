@@ -3,8 +3,8 @@
 
 Volvo has millions of data on their testing trucks and they want to use it to group their
 trucks based on their customer’s usage. The analysis of the daily duty cycle data will be used in
-unsupervised machine learning algorithms of K-Means and DBSCAN paired with PCA if
-necessary to determine the best clustering model for the trucks. A system of data extraction,
+unsupervised machine learning algorithms of K-Means and DBSCAN. A pairing with PCA will be used if
+necessary to determine the best clustering model for the trucks or for visualization purposes. A system of data extraction,
 processing and cleaning needs to be created in order to streamline an efficient process of feeding
 the data in the best performing machine learning model.
 
